@@ -16,5 +16,4 @@ jobs:
     steps:
       -name: 안녕하세요, 깃허브 액션
        run: |
-        echo "따뜻한 환영 고마워요! 저의 이름은 ${{ github.event.inputs.myName}} 입니다"
-        
+          echo "따뜻한 환영 고마워요! 저의 이름은 ${{ github.event.inputs.myName}} 입니다"

@@ -1,12 +1,8 @@
 name: 안녕, 깃허브 액션 - input 받기
 
-on: 
-  workflow_dispatch:
-    inputs:
-      myName:
-        description: "이름을 입력해주세요"
-        required: true
-        default: ''
+on:
+  pull_request:
+    types: opened
         
 jobs:
   Hello-GitHub-Action:
@@ -16,4 +12,4 @@ jobs:
     steps:
       - name: 안녕하세요, 깃허브 액션
         run: |
-            echo "따뜻한 환영 고마워요! 저의 이름은 ${{ github.event.inputs.myName}} 입니다"
+            echo "따뜻한 환영 고마워요! 저의 이름은 hyelim 입니다"
